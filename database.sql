@@ -19,6 +19,8 @@
 -- Table structure for table `t_alumnos`
 --
 
+create database escuela;
+
 DROP TABLE IF EXISTS `t_alumnos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;

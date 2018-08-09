@@ -16,7 +16,7 @@ class AlumnosController extends Controller {
         $validate = \Validator::make($paramsArray, [
                     'id_t_usuarios' => 'required|numeric',
                     'id_t_materias' => 'required|numeric',
-                    'calificacion' => 'required|numeric|size:10|min:0'
+                    'calificacion' => 'required|numeric|max:10|min:0'
         ]);
 
         if ($validate->fails()) {

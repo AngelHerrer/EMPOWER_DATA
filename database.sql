@@ -31,7 +31,7 @@ CREATE TABLE `t_alumnos` (
   `ap_materno` varchar(80) DEFAULT NULL,
   `activo` int(1) DEFAULT NULL,
   PRIMARY KEY (`id_t_usuarios`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -63,7 +63,7 @@ CREATE TABLE `t_calificaciones` (
   KEY `id_t_materias` (`id_t_materias`),
   CONSTRAINT `t_calificaciones_ibfk_1` FOREIGN KEY (`id_t_materias`) REFERENCES `t_materias` (`id_t_materias`),
   CONSTRAINT `t_calificaciones_ibfk_2` FOREIGN KEY (`id_t_materias`) REFERENCES `t_materias` (`id_t_materias`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -88,7 +88,7 @@ CREATE TABLE `t_materias` (
   `nombre` varchar(80) DEFAULT NULL,
   `activo` int(1) DEFAULT NULL,
   PRIMARY KEY (`id_t_materias`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
